@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
     nil
   else
     keys_words = name_hash.collect do |key, value|
-        key
+        key.to_s
     end
     shortest_word = keys_words[0]
     keys_words.each do |key|
